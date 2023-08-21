@@ -1,0 +1,82 @@
+.page-contact .row-form-wrapper {
+  box-shadow: -11.31px 11.31px 25px 0px rgba(138, 131, 124, 0.23);
+  padding: 90px 50px;
+  transition: all 1s ease;
+}
+.page-contact .row-form-wrapper:hover {
+  box-shadow: 20.31px 20.31px 25px 0px rgba(138, 131, 124, 0.53);
+  transition: all 1s ease;
+}
+
+.page-contact .form-wrapper form {
+  display: grid;
+  row-gap: 50px;
+}
+
+.page-contact .row-form-wrapper .form-wrapper form label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.page-contact .form-wrapper form label span.star {
+  color: var(--color-hover);
+  margin-left: 5px;
+}
+
+.page-contact .form-wrapper form input {
+  height: 40px;
+  margin-top: 20px;
+}
+
+.page-contact .form-wrapper form input,
+.page-contact .form-wrapper form textarea {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--color-text);
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.page-contact .form-wrapper form p:hover input,
+.page-contact .form-wrapper form p:hover textarea {
+  border-bottom: 3px solid var(--color-hover);
+  transition: all 0.3s ease;
+}
+
+.page-contact .form-wrapper form input[type='submit'] {
+  background: var(--color-hover);
+  border: none;
+  border-radius: 50px;
+  height: 35px;
+  color: var(--color-netral);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  width: 20%;
+}
+
+.page-contact .form-wrapper form p:hover input[type='submit'] {
+  border: none;
+}
+
+.page-contact .form-wrapper form input[type='submit']:hover {
+  border: 2px solid var(--color-hover) !important;
+  background: var(--color-netral);
+  color: var(--color-text);
+}
+
+@media screen and (max-width: 980px) {
+  .page-contact .row-form-wrapper {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .page-contact .row-form-wrapper {
+    padding: 50px 30px;
+  }
+
+  .page-contact .form-wrapper form input[type='submit'] {
+    width: 40%;
+  }
+}

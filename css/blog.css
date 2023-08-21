@@ -1,0 +1,119 @@
+.blog-wrapper {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.blog-wrapper .blog-card {
+  background: var(--color-netral);
+  padding: 20px;
+  box-shadow: -11.31px 11.31px 25px 0px rgba(138, 131, 124, 0.23);
+  transition: all 0.5s ease;
+  background: var(--color-netral);
+}
+
+.blog-wrapper .blog-card:hover {
+  box-shadow: 20.31px 20.31px 25px 0px rgba(138, 131, 124, 0.53);
+  transition: all 0.5s ease;
+}
+
+.blog-wrapper .blog-card > * {
+  color: var(--color-text) !important;
+}
+
+.blog-wrapper .blog-card .blog-title {
+  font-size: 16px;
+  font-family: var(--font-family-two);
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.blog-wrapper .blog-card .blog-excerpt {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+/* Single Post */
+.single-post .single-post-page {
+  margin-top: 85px;
+}
+
+.single-post-page .post-content-wrapper {
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.single-post-page .post-thumbnail {
+  height: calc(100vh - 125px);
+  margin-bottom: 50px;
+}
+
+.single-post-page .entry-title {
+  font-size: 50px;
+}
+
+.single-post-page .blog-date-wrapper .blog-date {
+  font-size: 20px;
+  font-family: var(--font-family-two);
+  font-weight: 200;
+}
+
+.single-post-page .entry-content p {
+  font-weight: 200;
+  line-height: 2em;
+  text-align: justify;
+}
+
+.single-post .post-navigation-wrapper .nav-links {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 80px;
+  column-gap: 50px;
+  align-items: center;
+}
+
+.single-post .post-navigation-wrapper .nav-links .nav-next {
+  text-align: right;
+}
+
+.single-post .post-navigation-wrapper .nav-links .nav-next a,
+.single-post .post-navigation-wrapper .nav-links .nav-previous a {
+  color: var(--color-text);
+}
+/* End of Single Post */
+
+@media screen and (min-width: 981px) and (max-width: 1024px) {
+  .page-blog .row-blog-wrapper {
+    width: 90% !important;
+  }
+
+  .page-blog .blog-wrapper {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .page-blog .row-blog-wrapper {
+    width: 90% !important;
+  }
+
+  .row-blog-wrapper .blog-wrapper {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .blog-wrapper {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .single-post-page .post-content-wrapper,
+  .single-post .post-navigation-wrapper {
+    width: 90%;
+  }
+
+  .single-post-page .entry-title {
+    font-size: 30px;
+  }
+}

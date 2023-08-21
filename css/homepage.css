@@ -1,0 +1,157 @@
+.home .section-1 {
+  background: linear-gradient(90deg, rgba(230, 217, 205, 1) 40%, rgba(255, 255, 255, 1) 40%);
+}
+
+.home .section-1 .row-wrapper {
+  grid-template-columns: 45% 50%;
+  grid-template-rows: 830px;
+  align-items: center;
+  grid-column-gap: 5%;
+}
+
+.home .section-1 .row-wrapper .col-1 {
+  justify-self: right;
+}
+
+.home .section-1 .row-wrapper .col-1 .content-wrapper {
+  box-shadow: -5px 5px 30px rgb(0 0 0 / 20%);
+  width: 375px;
+  /* position: absolute;
+      top: -280px;
+      top: 130px;
+      right: -50px; */
+}
+
+.home .section-1 .row-wrapper .col-1 .content-wrapper .upper-card {
+  background: var(--color-accent-1);
+  padding: 50px 70px;
+}
+
+.home .section-1 .row-wrapper .col-1 .content-wrapper .photo-wrapper {
+  width: 205px;
+  height: 205px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.home .section-1 .row-wrapper .col-1 .content-wrapper .photo-wrapper img {
+  border-radius: 50%;
+  /* transform: translate(60px, -40px) scale(3); */
+}
+
+.home .section-1 .row-wrapper .col-1 .content-wrapper .name-pos-wrapper {
+  text-align: center;
+}
+
+.home .section-1 .row-wrapper .col-1 .content-wrapper .name-pos-wrapper .name-wrapper {
+  font-size: 27px;
+  font-family: var(--font-family-two);
+  line-height: 1.2em;
+  font-weight: 700;
+  padding: 35px 30px 25px 30px;
+}
+
+.home .section-1 .row-wrapper .col-1 .content-wrapper .name-pos-wrapper .name-wrapper:before {
+  content: ' ';
+  border-bottom: 2px solid var(--color-hover);
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.home .section-1 .row-wrapper .col-1 .content-wrapper .name-pos-wrapper .position-wrapper {
+  font-size: 17px;
+  font-family: var(--font-family-one);
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  padding-top: 25px;
+  font-weight: 200;
+}
+
+.home .section-1 .row-wrapper .col-1 .content-wrapper .social-wrapper {
+  background: var(--color-netral);
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  justify-content: center;
+  grid-column-gap: 18px;
+  padding: 15px 0px;
+}
+
+.home .social-wrapper .social-item svg {
+  outline: none;
+  stroke: black;
+}
+
+.home .social-wrapper .social-item:not(:last-child) svg {
+  fill: black;
+}
+
+.home .section-1 .row-wrapper .col-1 .content-wrapper .social-wrapper .social-item {
+  width: 25px;
+  height: 25px;
+}
+
+.home .section-1 .row-wrapper .col-2 .col-title-wrapper .col-title {
+  font-size: 100px;
+  font-family: var(--font-family-two);
+}
+
+.home .section-1 .row-wrapper .col-2 .col-title-wrapper .col-subtitle {
+  font-size: 25px;
+  font-family: var(--font-family-one);
+  padding-bottom: 50px;
+}
+
+.home .section-1 .row-wrapper .col-2 .col-button-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-column-gap: 10px;
+  margin-bottom: 55px;
+}
+
+.home .section-1 .row-wrapper .col-2 .col-button-wrapper a {
+  font-size: 14px;
+  font-family: var(--font-family-one);
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 40px;
+  border-radius: 50px;
+}
+
+.home .section-1 .row-wrapper .col-2 .col-button-wrapper a.btn-resume,
+.home .section-1 .row-wrapper .col-2 .col-button-wrapper a.btn-project:hover {
+  background: var(--color-hover);
+  color: var(--color-netral);
+  border: 2px solid transparent;
+  /*     transition: border-color 0.5s ease 0s, background-color 0.5s ease 0s, color 0.5s ease 0s; */
+  transition: all 0.5s ease;
+  font-weight: 400;
+}
+
+.home .section-1 .row-wrapper .col-2 .col-button-wrapper a.btn-resume:hover {
+  color: var(--color-text);
+  background: var(--color-netral);
+  border: 2px solid var(--color-hover);
+  transition: all 0.5s ease;
+}
+
+.home .section-1 .row-wrapper .col-2 .col-button-wrapper a.btn-project {
+  color: var(--color-text);
+  background: var(--color-netral);
+  border: 1px solid var(--color-text);
+  transition: all 0.5s ease;
+  font-weight: 400;
+}
+
+.home .section-1 .row-wrapper .col-2 .col-desc-wrapper {
+  font-size: 17px;
+  font-family: var(--font-family-one-light);
+  line-height: 1.5em;
+  width: 400px;
+}

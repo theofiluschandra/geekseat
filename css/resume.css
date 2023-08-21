@@ -1,0 +1,129 @@
+.page-body .banner-internal {
+  margin-bottom: 100px;
+}
+
+.page-body .banner-internal .section-title-wrapper {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.page-body .banner-internal .section-title-wrapper .section-title {
+  text-align: center;
+  font-size: 35px;
+  font-family: var(--font-family-two);
+  /* width: 200px; */
+}
+
+.page-body .banner-internal .section-title-wrapper .section-title:before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background: var(--color-hover);
+  position: absolute;
+  top: 19px;
+  left: 0px;
+}
+
+.page-resume .row-2 .column-wrapper {
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0px 0px 50px 0px;
+}
+
+.page-resume .row-2 .column-wrapper .card-title-wrapper .card-title {
+  font-size: 25px;
+  font-family: var(--font-family-two);
+}
+
+.page-resume .row-2 .column-wrapper .btn-download-cv-wrapper .btn-download-cv {
+  background: var(--color-hover);
+  color: var(--color-netral);
+  border: 2px solid transparent;
+  transition: all 0.5s ease;
+  float: right;
+  font-size: 14px;
+  font-family: var(--font-family-one);
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 40px;
+  border-radius: 50px;
+}
+
+.page-resume .row-2 .column-wrapper .btn-download-cv-wrapper .btn-download-cv:hover {
+  color: var(--color-text);
+  background: transparent;
+  border: 2px solid var(--color-hover);
+  transition: all 0.5s ease;
+}
+
+.page-resume .card-wrapper .card-item {
+  background: var(--color-netral);
+  margin-bottom: 40px;
+  padding: 90px 50px;
+  box-shadow: -11.31px 11.31px 25px 0px rgba(138, 131, 124, 0.23);
+  transition: all 0.5s ease;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-family: var(--font-family-one);
+  font-weight: 200;
+  gap: 30px;
+}
+
+.page-resume .card-wrapper .card-item:hover {
+  box-shadow: 20.31px 20.31px 25px 0px rgba(138, 131, 124, 0.53);
+  transition: all 0.5s ease;
+}
+
+.page-resume .card-wrapper .card-item .working-year {
+  font-size: 20px;
+  color: var(--color-hover);
+  font-family: var(--font-family-two);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.page-resume .card-wrapper .card-item .job-position {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.page-resume .card-wrapper .card-item .company-name,
+.page-resume .card-wrapper .card-item .company-location {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.page-resume .card-wrapper .card-item .company-name a,
+.page-resume .card-wrapper .card-item .job-desc a {
+  color: var(--color-text);
+}
+
+.page-resume .card-wrapper .card-item .job-desc {
+  line-height: 1.5em;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 980px) {
+  .page-resume .row-wrapper {
+    width: 70%;
+  }
+
+  .page-resume .card-wrapper .card-item .job-desc {
+    max-height: 300px;
+    overflow: scroll;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .page-resume .row-wrapper {
+    width: 90%;
+  }
+
+  .page-resume .row-2 .column-wrapper .btn-download-cv-wrapper .btn-download-cv {
+    padding: 10px 20px;
+  }
+
+  .page-resume .card-wrapper .card-item {
+    padding: 50px 20px;
+  }
+}

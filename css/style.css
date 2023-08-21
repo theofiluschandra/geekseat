@@ -1,0 +1,16 @@
+@import 'header.css';
+@import 'homepage.css';
+@import 'resume.css';
+@import 'project.css';
+@import 'footer.css';
+@import 'contact.css';
+@import 'blog.css';
+@import 'global.css';
+
+.page-padding {
+  padding: 125px 0px;
+}
+
+html {
+  margin-top: 0 !important;
+}
